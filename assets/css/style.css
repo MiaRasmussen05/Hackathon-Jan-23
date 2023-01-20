@@ -79,3 +79,18 @@ main {
     margin-top: 7%;
     margin-left: 43%;
 }
+
+.descriptions {
+    background-color: #20B2AA;
+    padding: 3% 10%;
+}
+
+.descriptions-wrapper {
+    display: inline-flex;
+    margin-right: 3%;
+}
+
+.info {
+    font-size: 20px;
+    margin-left: 5%;
+}
