@@ -94,3 +94,25 @@ main {
     font-size: 20px;
     margin-left: 5%;
 }
+
+.comments-wrapper {
+    padding: 5% 2%;
+}
+
+.comment {
+    width: 30%;
+    display: inline-flex;
+    margin-left: 35px;
+}
+
+.comment-image {
+    width: 300px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.comment-text {
+    font-size: 18px;
+    margin-left: 20px;
+}
