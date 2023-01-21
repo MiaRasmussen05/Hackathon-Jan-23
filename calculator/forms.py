@@ -4,7 +4,7 @@ from .models import CalcFunding
 
 class CalcFundingForm(forms.ModelForm):
     class Meta:
-        model_calc = CalcFunding
+        model = CalcFunding
         exclude = ()
 
     def __init__(self, *args, **kwargs):

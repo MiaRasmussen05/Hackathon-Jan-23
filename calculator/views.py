@@ -11,14 +11,20 @@ class LoadHomePage(View):
         return render(request, 'index.html')
 
 
-# def calc(request):
-#     if request.method == 'POST':
-#         form = CalcFundingForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             calc_funding = form.save()
-#     else:
-#         form = CalcFundingForm()    
+def calc(request):
+    if request.method == 'POST':
+        form = CalcFundingForm(request.POST, request.FILES)
+        if form.is_valid():
+            calc_funding = form.save()
+    else:
+         form = CalcFundingForm()    
+    #extra = calc_funding.salary_post - calc_funding.expences
 
-#     extra = calc_funding.salary_post - calc_funding.expences
+    #if calc_funding.
 
-#     if calc_funding.
+    template = 'calculator/calc-funding.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
