@@ -6,14 +6,19 @@ from .models import CalcFunding
 from .forms import CalcFundingForm
 
 
-def calc(request):
-    if request.method == 'POST':
-        form = CalcFundingForm(request.POST, request.FILES)
-        if form.is_valid():
-            calc_funding = form.save()
-    else:
-        form = CalcFundingForm()    
+class LoadHomePage(View):
+    def get(self, request):
+        return render(request, 'index.html')
 
-    extra = calc_funding.salary_post - calc_funding.expences
 
-    if calc_funding.
+# def calc(request):
+#     if request.method == 'POST':
+#         form = CalcFundingForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             calc_funding = form.save()
+#     else:
+#         form = CalcFundingForm()    
+
+#     extra = calc_funding.salary_post - calc_funding.expences
+
+#     if calc_funding.
