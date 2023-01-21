@@ -1,0 +1,1 @@
+web: gunicorn snappy_savings.wsgi
