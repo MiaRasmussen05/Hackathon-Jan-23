@@ -3,20 +3,22 @@
 
 {% block content %}
 <main>
-    <section class="start-section">
-        <div class="get-started">
-            <h1><strong>Manage your money the snappy way</strong></h1>
-                <p>
-                Snappy Savings is a fresh take on managing your budget, helping you to track your spending,
-                save some extra money and see if you can afford that payday purchase. 
-                </p>
-
-            <br>
-            <br>
-            <button class="create-account-btn btn btn-success">Create Account</button>
-        </div>
-        <div class="images">
-            <img src="{% static 'images/scales.png' %}" alt="">
+    <section class="container-fluid start-section">
+        <div class="row">
+            <div class="col-6 get-started">
+                <h1><strong>Manage your money the snappy way</strong></h1>
+                    <p>
+                    Snappy Savings is a fresh take on managing your budget, helping you to track your spending,
+                    save some extra money and see if you can afford that payday purchase. 
+                    </p>
+    
+                <br>
+                <br>
+                <button class="col-3 create-account-btn btn btn-success btn-lg">Create Account</button>
+            </div>
+            <div class="col-3 images">
+                <img src="{% static 'images/scales.png' %}" alt="">
+            </div>
         </div>
     </section>
     <section class="descriptions">
