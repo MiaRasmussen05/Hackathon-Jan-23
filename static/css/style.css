@@ -5,6 +5,7 @@
 
 body {
     min-height: 100vh;
+    position: relative;
 }
 
 nav {
@@ -245,7 +246,9 @@ header nav ul li {
 
 /* footer styles */
 .ftr-container {
-    background-color: #20B2AA; 
+    background-color: #20B2AA;
+    bottom: 0;
+    position: absolute; 
 }
 
 .social-links a {
