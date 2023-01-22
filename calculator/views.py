@@ -31,23 +31,28 @@ def run_calc(request):
         if form.is_valid():
             calc_funding = form.save()
             extra = calc_funding.salary_post - calc_funding.expences
-            if calc_funding.fund == 'SV':
-                if (calc_funding.savings - calc_funding.salary_pre * 3) > calc_funding.cost:
-                    print("success")
-                    messages.warning(request, 'success meaasge')
-                else:
-                    print("error")
-                    messages.warning(request, 'error meaasge')
-                print("post")
+            if calc_funding.expences > calc_funding.salary_post:
+                messages.error(request, 'income error meaasge')
             else:
-                if calc_funding.cost < (extra * 0.7):
-                    print(calc_funding.cost, (extra*0.7))
-                    print("success")
-                    messages.warning(request, 'success meaasge')
+                if calc_funding.fund == 'SV':
+                    if (calc_funding.savings - calc_funding.salary_pre * 3) > calc_funding.cost:
+                        print("success")
+                        messages.success(request, 'success meaasge')
+                    else:
+                        print("error")
+                        messages.warning(request, 'error meaasge')
+                    print("post")
                 else:
-                    print("error")
-                    messages.warning(request, 'error meaasge')
-                print("post")
+                    if calc_funding.cost < (extra * 0.7):
+                        print(calc_funding.cost, (extra*0.7))
+                        print("success")
+                        messages.success(request, 'success meaasge')
+                    else:
+                        print("error")
+                        messages.warning(request, 'error meaasge')
+                    print("post")
+        else:
+            messages.info(request, 'info meaasge')
     else:
         form = CalcFundingForm()
     return redirect(reverse('calc'))
