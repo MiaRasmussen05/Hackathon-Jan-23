@@ -210,7 +210,6 @@ header nav ul li {
     width: 25%;
     height: 55vh;
     border-radius: 20px;
-
 } 
 
 .info-two {
@@ -223,6 +222,28 @@ header nav ul li {
     width: 25%;
     height: 55vh;
     border-radius: 20px;
+}
+
+.info-three i, .info-two i, .info-basic i {
+    position: absolute;
+    font-size: 50px;
+    animation: opacity 9s infinite ease-in-out;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+      }
+    50% {
+        opacity: 1;
+      }
+    100% {
+        opacity: 0;
+    }
+    }
+
+.info-three h2 {
+    display: block;
 }
 
 /* end description section */
@@ -289,7 +310,7 @@ header nav ul li {
     color: #000;
 }
 
-.card {
+.creator-card {
     display: block;
     text-align: center;
     padding: 20px;
@@ -301,7 +322,7 @@ header nav ul li {
     font-size: 16px;
 }
 
-.card img {
+.creator-card img {
     width: 200px;
     object-fit: cover;
     border: 6px solid #20B2AA;
@@ -314,4 +335,36 @@ header nav ul li {
 
 .calculator-wrapping {
     padding-top: 200px;
+}
+
+/* Calculator messeges */
+
+.card-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.card {
+    width: 30%;
+    height: 250px;
+    position: fixed;
+    top: 35%;
+    left: 33%;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.d-flex, .toast-body {
+    text-align: center;
+}
+
+
+.d-flex p, .toast-body p {
+    padding: 10%
 }
