@@ -149,6 +149,34 @@ header nav ul li {
     border-radius: 20px;
 }
 
+.info-three i {
+    display: none;
+    font-size: 150px;
+    margin: 40px 0 20px 0;
+    margin-left: 25%;
+}
+
+.info-three h2 {
+    display: block;
+    animation: switch 8s infinite ease-in forwards 8s
+}
+
+@keyframes switch {
+    0% {
+      opacity: 0;
+    }
+    20% {
+        opacity: 1;
+        background-image: url("http://image.flaticon.com/icons/png/128/148/148836.png"); //Put your own image here
+        position: absolute;
+        width: 128px;
+        height: 128px;
+    }
+    50, 100% {
+        opacity: 0;
+    }
+    }
+
 /* end description section */
 
 .comment-section {
