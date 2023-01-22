@@ -82,8 +82,9 @@ main {
     margin-left: 43%;
 }
 
+/* descripttion sections styles */
 .descriptions {
-    background-color: #20B2AA;
+    background-color: rgba(32, 178, 170, 0.7);
     padding: 3% 10%;
 }
 
@@ -92,10 +93,49 @@ main {
     margin-right: 3%;
 }
 
+.save-heading {
+    text-align: center;
+    font-weight: 400;
+    padding: 2rem;
+    justify-content: center;
+    text-shadow: 1px 1px gray;
+}
+
+.save-heading2 {
+    text-align: center;
+    font-weight: 400;
+    padding: 2rem;
+    justify-content: center;
+    text-shadow: 1px 1px darkgray;
+}
+
 .info {
     font-size: 20px;
-    margin-left: 5%;
+    margin-left: 7%;
+    margin: 0 auto;
+    font-weight: 100;
 }
+
+.info-basic {
+    width: 25%;
+    height: 55vh;
+    border-radius: 20px;
+
+} 
+
+.info-two {
+    width: 25%;
+    height: 55vh;
+    border-radius: 20px;
+}
+
+.info-three {
+    width: 25%;
+    height: 55vh;
+    border-radius: 20px;
+}
+
+/* end description section */
 
 .comments-wrapper {
     padding: 5% 2%;
