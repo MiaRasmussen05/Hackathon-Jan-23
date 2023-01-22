@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic, View
 #from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import CalcFunding
 from .forms import CalcFundingForm
 
@@ -45,5 +46,4 @@ def run_calc(request):
                 print("post")
     else:
         form = CalcFundingForm()
-
     return redirect(reverse('calc'))
