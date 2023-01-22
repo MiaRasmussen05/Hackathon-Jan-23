@@ -99,7 +99,8 @@ Detail plans and scope of project here....
 ​
 << put all your mobile wireframes here... >>
 
-<a href="obj/workspace/Kyle-Hackathon-Jan-23/Desktop Wireframes.pdf">Desktop Wireframes</a>
+
+View wireframes [PDF file here](https://github.com/MiaRasmussen05/Hackathon-Jan-23/blob/main/documentation/snappy-savings.pdf)
 ​
 << consider adding some notes to detail the planned components or functionality >>
 ​
