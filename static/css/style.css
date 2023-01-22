@@ -78,7 +78,6 @@ header {
 }
 
 
-/*
 nav {
     width: 100%;
     position: fixed;
@@ -358,6 +357,46 @@ header nav ul li {
     padding-top: 200px;
 }
 
+
+/* footer styles */
+.ftr-container {
+    background-color: #20B2AA; 
+}
+
+.social-links a {
+    text-decoration: none;
+    display: inline-block;
+    height: 40px; 
+    width: 40px; 
+}
+
+.social-links a:hover {
+    background-color: rgba(64, 64, 64, 0.4);
+    border-radius: 5px;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+    border-top: solid;
+    cursor: pointer;
+}
+
+.disclaimer {
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.copyright-box {
+    padding-top: 30px;
+}
+
+.copyright {
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+
 /* Calculator messeges */
 
 .card-wrapper {
@@ -388,4 +427,5 @@ header nav ul li {
 
 .d-flex p, .toast-body p {
     padding: 10%
+
 }
