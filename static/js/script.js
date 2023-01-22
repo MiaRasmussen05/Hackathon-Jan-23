@@ -1,8 +1,9 @@
 let div = document.getElementById("popup");
 
-function popUp() {
-    console.log("running");
-}
+//function popUp() {
+//    console.log("running");
+//}
+
 
 // Carousel Swiper
 var swiper = new Swiper(".mySwiper", {

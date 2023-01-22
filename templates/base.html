@@ -49,6 +49,24 @@
         </nav>
     </header>
 
+    {% if messages %}
+        <div class="message-container mt-20">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/cards/card_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/cards/card_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/cards/card_success.html' %}
+                    {% else %}
+                        {% include 'includes/cards/card_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
     {% block content %}
 
     {% endblock %}
