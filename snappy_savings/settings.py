@@ -48,15 +48,10 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    # "allauth_ui",
-    "allauth",
-    "allauth.account",
-    "allauth.socialaccount",
-    "allauth.socialaccount.providers.github",
-#    "widget_tweaks",
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary',
-    # "widget_tweaks",
-    # 'cloudinary',
     'calculator',
 ]
 
