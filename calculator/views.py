@@ -7,8 +7,6 @@ from .models import CalcFunding
 from .forms import CalcFundingForm
 
 
-
-
 class LoadHomePage(View):
     def get(self, request):
         return render(request, 'index.html')
