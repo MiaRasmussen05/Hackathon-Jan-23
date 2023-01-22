@@ -263,11 +263,11 @@ header nav ul li {
     padding: 0;
 }
 
-.d-flex {
+.d-flex, .toast-body {
     text-align: center;
 }
 
 
-.d-flex p {
+.d-flex p, .toast-body p {
     padding: 10%
 }
