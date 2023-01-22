@@ -3,14 +3,12 @@
 
 {% block content %}
 <div class="container">
-    <div class="calculator-wrapping">
+    <div class="calculator-wrapping col-11 col-md-2">
         <form action="{% url 'run_calc' %}" method="POST" id="product-form" class="form mb-5" encrypte="multipart/form-data">
             {% csrf_token %}
-            {% for field in form %}
-                <p class="mb-0 mt-2 text-uppercase">{{ field.name }}:</p>{{ field }}
-            {% endfor %}
+            {{ form }}
             <div>
-                <button class="btn btn-success" type="submit" id="result-btn">Calculate</button> 
+                <button class="btn btn-success mt-5" type="submit" id="result-btn">Calculate</button> 
             </div>
         </form>
     </div>
