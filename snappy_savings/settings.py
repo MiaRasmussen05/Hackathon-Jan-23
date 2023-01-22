@@ -49,9 +49,6 @@ INSTALLED_APPS = [
     #'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-
-    # "allauth_ui",
-
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
@@ -61,6 +58,7 @@ INSTALLED_APPS = [
     # 'cloudinary',
 
     'calculator',
+    'user_profile',
 ]
 
 SITE_ID = 1
@@ -104,6 +102,16 @@ AUTHENTICATION_BACKENDS = [
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/success'
+
+SITE_ID = 1
 
 WSGI_APPLICATION = 'snappy_savings.wsgi.application'
 
@@ -176,3 +184,4 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
