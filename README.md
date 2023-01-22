@@ -98,6 +98,8 @@ Detail plans and scope of project here....
 <summary>- Desktop Wireframes:</summary>
 ​
 << put all your mobile wireframes here... >>
+
+<a href="obj/workspace/Kyle-Hackathon-Jan-23/Desktop Wireframes.pdf">Desktop Wireframes</a>
 ​
 << consider adding some notes to detail the planned components or functionality >>
 ​
