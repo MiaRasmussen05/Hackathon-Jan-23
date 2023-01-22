@@ -1,13 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
+
+/* Navbar */
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #20B2AA;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #999
+}
+
+.btn-1,
+.btn-1 *,
+.btn-1 :after,
+.btn-1 :before,
+.btn-1:after,
+.btn-1:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-1 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #20B2AA;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  text-transform: uppercase;
+}
+
+.btn-1 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 9px 25px;
+}
+.btn-1:hover {
+  color: #999;
+}
+
 
 nav {
     width: 100%;
     position: fixed;
-    /* height: 60px; */
-    /* position: fixed; */
+    height: 60px;
+    position: fixed; 
     background-color: #20B2AA;
     border-bottom: 4px solid #404040;
     padding-bottom: 8px;
@@ -164,7 +239,7 @@ header nav ul li {
     100% {
         opacity: 0;
     }
-    }
+}
 
 .info-three h2 {
     display: block;
@@ -177,14 +252,14 @@ header nav ul li {
 }
 
 .comments-wrapper {
-    height: 500px;
+    height: 450px;
     padding: 4% 1.5%;
     /* margin-left: 23px; */
 }
 
 .swiper {
     /* width: 98%; */
-    height: 300px;
+    height: 320px;
 }
 
 .swiper-wrapper {
@@ -213,9 +288,26 @@ header nav ul li {
     margin-left: 23px;
 }
 
-/* .creators {
-    background-color: #404040;
-} */
+.creators {
+    height: 500px;
+}
+
+.creators .swiper {
+    height: 500px;
+}
+
+.creators .swiper-wrapper {
+    width: 230%;
+    margin-left: 0px;
+    margin-top: 90px;
+}
+
+.creators .swiper-slide {
+    height: 320px;
+    margin: 0;
+    margin-left: -8.5px;
+}
+
 
 .card-space a{
     width: 400px;
@@ -225,7 +317,7 @@ header nav ul li {
     color: #fff;
     background-color: #404040;
     border-radius: 10px;
-    margin: auto 0 auto 43px;
+    margin: auto 0 auto 53px;
 }
 
 .card-space a:hover {
@@ -253,6 +345,10 @@ header nav ul li {
     border-radius: 50%;
 }
 
+.img-first {
+    height: 210px;
+}
+
 .name {
     font-size: 30px;
 }
@@ -260,6 +356,46 @@ header nav ul li {
 .calculator-wrapping {
     padding-top: 200px;
 }
+
+
+/* footer styles */
+.ftr-container {
+    background-color: #20B2AA; 
+}
+
+.social-links a {
+    text-decoration: none;
+    display: inline-block;
+    height: 40px; 
+    width: 40px; 
+}
+
+.social-links a:hover {
+    background-color: rgba(64, 64, 64, 0.4);
+    border-radius: 5px;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+    border-top: solid;
+    cursor: pointer;
+}
+
+.disclaimer {
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.copyright-box {
+    padding-top: 30px;
+}
+
+.copyright {
+    text-transform: uppercase;
+    font-weight: 300;
+    cursor: pointer;
 
 /* Calculator messeges */
 
@@ -291,4 +427,5 @@ header nav ul li {
 
 .d-flex p, .toast-body p {
     padding: 10%
+
 }
