@@ -34,15 +34,19 @@ def run_calc(request):
             if calc_funding.fund == 'SV':
                 if (calc_funding.savings - calc_funding.salary_pre * 3) > calc_funding.cost:
                     print("success")
+                    messages.warning(request, 'success meaasge')
                 else:
                     print("error")
+                    messages.warning(request, 'error meaasge')
                 print("post")
             else:
                 if calc_funding.cost < (extra * 0.7):
                     print(calc_funding.cost, (extra*0.7))
                     print("success")
+                    messages.warning(request, 'success meaasge')
                 else:
                     print("error")
+                    messages.warning(request, 'error meaasge')
                 print("post")
     else:
         form = CalcFundingForm()

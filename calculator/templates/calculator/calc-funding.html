@@ -10,11 +10,11 @@
                 <p class="mb-0 mt-2 text-uppercase">{{ field.name }}:</p>{{ field }}
             {% endfor %}
             <div>
-                <button class="btn btn-success" type="submit" onclick="popUp()">Calculate</button> 
+                <button class="btn btn-success" type="submit" id="result-btn">Calculate</button> 
             </div>
         </form>
     </div>
-    <div class="card">
+    <div class="card" id="result">
         <div class="card-body">
             <p>Result</p>
             
