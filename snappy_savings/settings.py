@@ -12,9 +12,17 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+<<<<<<< HEAD
+import dj_database_url
+=======
 # import dj_database_url
+>>>>>>> 55cdfe854a4ad7ff1d42d5fef90dbd349fd9efff
 if os.path.isfile('env.py'):
     import env
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,7 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+<<<<<<< HEAD
+    'cloudinary_storage',
+=======
     # 'cloudinary_storage',
+>>>>>>> 55cdfe854a4ad7ff1d42d5fef90dbd349fd9efff
     'django.contrib.staticfiles',
     'django.contrib.sites',
     # "allauth_ui",
@@ -48,8 +60,13 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "allauth.socialaccount.providers.github",
+<<<<<<< HEAD
+#    "widget_tweaks",
+    'cloudinary',
+=======
     # "widget_tweaks",
     # 'cloudinary',
+>>>>>>> 55cdfe854a4ad7ff1d42d5fef90dbd349fd9efff
     'calculator',
 ]
 
@@ -99,6 +116,19 @@ WSGI_APPLICATION = 'snappy_savings.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+<<<<<<< HEAD
+if 'TESTING' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+else:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+=======
 DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.sqlite3',
@@ -109,6 +139,7 @@ DATABASES = {
 # DATABASES = {
 #   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 # }
+>>>>>>> 55cdfe854a4ad7ff1d42d5fef90dbd349fd9efff
 
 
 # Password validation
@@ -148,11 +179,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+=======
 # STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+>>>>>>> 55cdfe854a4ad7ff1d42d5fef90dbd349fd9efff
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 MEDIA_URL = '/media/'
+<<<<<<< HEAD
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+=======
 # DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+>>>>>>> 55cdfe854a4ad7ff1d42d5fef90dbd349fd9efff
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
