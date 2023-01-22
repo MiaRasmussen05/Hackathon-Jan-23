@@ -54,8 +54,6 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.github",
     # "widget_tweaks",
     'cloudinary',
-    # "widget_tweaks",
-    # 'cloudinary',
     'calculator',
 ]
 
