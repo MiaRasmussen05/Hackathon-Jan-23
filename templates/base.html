@@ -33,7 +33,7 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="index.html">Logo</a>
+            <a class="logo" href="index.html">Snappy Savings</a>
             <ul>
                 <li><a href="/">About</a></li>
                 <li><a href="/">Quotes</a></li>
@@ -41,15 +41,12 @@
                 <li><a href="{% url 'calc' %}">Calculator</a></li>
                 {% if request.user.is_authenticated %}
                 <li><a href="{% url 'profile' %}">Profile</a></li>
-                <li><a href="{% url 'account_logout' %}">Log out</a></li>
+                <li><a href="{% url 'account_logout' %}"><button class="btn-1">Logout</button></a></li>
                 {% else %}
-                <li><a href="{% url 'account_login' %}">Login</a></li>
-                <li><a href="{% url 'account_signup' %}">Register</a></li>
+                <li><a href="{% url 'account_signup' %}"><button class="btn-1 btn-register">Register</button></a></li>
+                <li><a href="{% url 'account_login' %}"><button class="btn-1">Login</button></a></li>
                 {% endif %}
             </ul>
-            <a href="{% url 'account_signup' %}"><button class="btn-1 btn-register">Register</button></a>
-            <a href="{% url 'account_login' %}"><button class="btn-1">Login</button></a>
-            <a href="{% url 'account_logout' %}"><button class="btn-1">Logout</button></a>
         </nav>
     </header>
 

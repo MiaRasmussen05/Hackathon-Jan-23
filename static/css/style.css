@@ -23,7 +23,7 @@ header {
     align-items: center;
     background-color: #20B2AA;
     border-bottom: 4px solid #404040;
-    padding: 20px 2%;
+    padding: 0px 2%;
 }
 
 header a {
@@ -34,7 +34,8 @@ header a {
 .logo {
     cursor: pointer;
     font-size: 40px;
-    padding: 10px;
+    line-height: 100px;
+    padding: 0px 10px;
     margin-left: 15px;
 }
 
@@ -45,19 +46,15 @@ header nav ul {
     margin-left: 4%;
 }
 
-.nav_links li a {
-    padding: 0px 20px;
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color: #fff
-}
-
-header nav ul li {
+header nav ul li a {
     display: flex;
     font-size: 20px;
-    margin-right: 0px;
+    transition: all 0.3s ease 0s;
+    margin-right: 40px;
+}
+
+header nav ul li a:hover {
+    color: #fff
 }
 
 li, a, button {
@@ -85,7 +82,8 @@ li, a, button {
   border-width: 2px;
   color: #fff;
   cursor: pointer;
-  margin: 0px 20px;
+  margin: 0px 10px;
+  margin-top: -13px;
   padding: 9px 25px;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   text-transform: uppercase;
@@ -97,13 +95,11 @@ li, a, button {
 }
 
 .btn-register {
-    margin-left: 300px;
+    margin-left: 480px;
 }
 
 .login-btn-nav {
-    float: right;
     font-size: 20px;
-    line-height: 70px;
 }
 
 /* main {
@@ -111,7 +107,7 @@ li, a, button {
 } */
 
 .start-section {
-    height: 87.2vh;
+    height: 88vh;
     position: relative;
     padding-top: 100px;
 }
@@ -153,6 +149,17 @@ li, a, button {
 .descriptions-wrapper {
     display: inline-flex;
     margin-right: 3%;
+}
+
+.descriptions-wrapper h2, .comment-section h2, .creators h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 3% 0;
+    text-decoration: underline;
+}
+
+.creators h2 {
+    color: #fff;
 }
 
 .save-heading {
@@ -225,13 +232,11 @@ li, a, button {
 }
 
 .comments-wrapper {
-    height: 450px;
+    height: 400px;
     padding: 4% 1.5%;
-    /* margin-left: 23px; */
 }
 
 .swiper {
-    /* width: 98%; */
     height: 320px;
 }
 
@@ -246,7 +251,7 @@ li, a, button {
 
 .swiper-slide {
     height: 400px;
-    margin: 0px 0 0 -10px;
+    margin: 0 0 0 -10px;
 }
 
 .comment-image {
@@ -262,21 +267,21 @@ li, a, button {
 }
 
 .creators {
-    height: 500px;
+    background-color: #000;
+    height: 550px;
 }
 
 .creators .swiper {
-    height: 500px;
+    height: 370px;
 }
 
 .creators .swiper-wrapper {
     width: 230%;
     margin-left: 0px;
-    margin-top: 90px;
 }
 
 .creators .swiper-slide {
-    height: 320px;
+    height: 350px;
     margin: 0;
     margin-left: -8.5px;
 }
@@ -370,6 +375,7 @@ hr {
     text-transform: uppercase;
     font-weight: 300;
     cursor: pointer;
+    margin-bottom: 0;
 }    
 
 
