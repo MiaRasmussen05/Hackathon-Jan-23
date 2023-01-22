@@ -18,5 +18,6 @@ class CalcFundingForm(forms.ModelForm):
             'savings': 'Savings',
             'salary_pre': 'Salary before taxes',
             'salary_post': 'Salary afret taxes',
-            'expences': 'Monthly expences'
+            'expences': 'Monthly expences',
+            'fund': 'Funding choice',
         }

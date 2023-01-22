@@ -8,6 +8,7 @@ class CalcFundingAdmin(admin.ModelAdmin):
         'salary_pre',
         'salary_post',
         'expences',
+        #'fund',
     )
 
     ordering = (
