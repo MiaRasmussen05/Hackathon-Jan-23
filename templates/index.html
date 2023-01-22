@@ -44,7 +44,7 @@
     </section>
     <section class="comment-section container-fluid">
         <div class="comments-wrapper">
-            <div class="carousel swiper mySwiper">
+            <div class="carousel swiper mySwiperComment">
                 <div class="row swiper-wrapper">
                     <div class="comment col-3 swiper-slide">
                         <img class="comment-image rounded-circle"
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="comment col-4 swiper-slide">
+                    <div class="comment col-3 swiper-slide">
                         <img class="comment-image rounded-circle"
                             src="https://i.ibb.co/8bHPxvZ/pexels-padli-pradana-2912166.jpg"
                             alt="Image of another smiling female customer">
@@ -104,15 +104,16 @@
                             <div class="comment-text media-body">
                                 <blockquote class="blockquote">
                                     <p>
-                                        The snappy messages really helped me to stop purchasing things that I cannot afford.
-                                         I love this honest fresh take on a finance app. 
+                                        The snappy messages really helped me to stop purchasing things that I cannot
+                                        afford.
+                                        I love this honest fresh take on a finance app.
                                     </p>
                                     <p>- Iona</p>
                                 </blockquote>
                             </div>
                         </div>
                     </div>
-                    <div class="comment col-4 swiper-slide">
+                    <div class="comment col-3 swiper-slide">
                         <img class="comment-image rounded-circle"
                             src="https://i.ibb.co/gzqctYw/pexels-andrea-piacquadio-3767397.jpg"
                             alt="Image of a smiling couple, with the female holding up a credit card">
@@ -120,9 +121,10 @@
                             <div class="comment-text media-body">
                                 <blockquote class="blockquote">
                                     <p>
-                                        Snappy Savings is easy to use and has a sleek design. We would reccomend it to anybody!
+                                        Snappy Savings is easy to use and has a sleek design. We would reccomend it to
+                                        anybody!
                                     </p>
-                                    <p>-  Name</p>
+                                    <p>- Name</p>
                                 </blockquote>
                             </div>
                         </div>
@@ -138,61 +140,76 @@
         <div class="card-space">
             <div class="carousel swiper mySwiper">
                 <div class="row swiper-wrapper">
-                    <a href="">
-                        <div class="creator-card">
-                            <div class="box">
-                                <img src="" alt="">
-                                <div class="name">FiName LaName</div>
-                                <p class="work">Full Stack/specialisation</p>
+                    <div class="creators.box col-3 swiper-slide">
+                        <a href="">
+                            <div class="creator-card swiper-slide">
+                                <div class="box">
+                                    <img class="img-first" src="https://imgur.com/65i5UP4.png" alt="">
+                                    <div class="name">Erik Forsman</div>
+                                    <p class="work">Full Stack Development</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="creator-card">
-                            <div class="box">
-                                <img src="" alt="">
-                                <div class="name">FiName LaName</div>
-                                <p class="work">Full Stack/specialisation</p>
+                        </a>
+                    </div>
+                    <div class="creators.box col-3 swiper-slide">
+                        <a href="">
+                            <div class="creator-card swiper-slide">
+                                <div class="box">
+                                    <img src="https://imgur.com/54aVUcM.png" alt="">
+                                    <div class="name">Hope Tracy</div>
+                                    <p class="work">Full Stack Development</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="creator-card">
-                            <div class="box">
-                                <img src="" alt="">
-                                <div class="name">FiName LaName</div>
-                                <p class="work">Full Stack/specialisation</p>
+                        </a>
+                    </div>
+                    <div class="creators.box col-3 swiper-slide">
+                        <a href="">
+                            <div class="creator-card swiper-slide">
+                                <div class="box">
+                                    <img src="{% static 'images/james-profile.jpg' %}" alt="Image of James">
+                                    <div class="name">James Martin</div>
+                                    <p class="work">Full Stack Development</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="creator-card">
-                            <div class="box">
-                                <img src="{% static 'images/mia.png' %}" alt="">
-                                <div class="name">Mia Rasmussen</div>
-                                <p class="work">Full Stack Development</p>
+                        </a>
+                    </div>
+                    <div class="creators.box col-3 swiper-slide">
+                        <a href="">
+                            <div class="creator-card swiper-slide">
+                                <div class="box">
+                                    <img src="https://i.ibb.co/vz1L2CJ/IMG-20221201-170824-241.webp" alt="Image of Kyle">
+                                    <div class="name">Kyle Clow</div>
+                                    <p class="work">Full Stack Development</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="creator-card">
-                            <div class="box">
-                                <img src="https://i.ibb.co/vz1L2CJ/IMG-20221201-170824-241.webp" alt="Image of Kyle">
-                                <div class="name">Kyle Clow</div>
-                                <p class="work">Full Stack Development</p>
+                        </a>
+                    </div>
+                    <div class="creators.box col-3 swiper-slide">
+                        <a href="">
+                            <div class="creator-card swiper-slide">
+                                <div class="box">
+                                    <img src="{% static 'images/mia.png' %}" alt="">
+                                    <div class="name">Mia Rasmussen</div>
+                                    <p class="work">Full Stack Development</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="creator-card">
-                            <div class="box">
-                                <img src="" alt="">
-                                <div class="name">FiName LaName</div>
-                                <p class="work">Full Stack/specialisation</p>
+                        </a>
+                    </div>
+                    <div class="creators.box col-3 swiper-slide">
+                        <a href="">
+                            <div class="creator-card swiper-slide">
+                                <div class="box">
+                                    <img src="https://imgur.com/J8VwIk3.png" alt="">
+                                    <div class="name">Yari Carelli</div>
+                                    <p class="work">Full Stack Development</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>

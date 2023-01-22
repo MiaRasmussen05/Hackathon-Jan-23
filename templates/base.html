@@ -10,12 +10,15 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    
+
     <!-- Swiper's CSS link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -29,45 +32,89 @@
 
 <body>
     <header>
-        <a class="logo" href="index.html">Snappy Savings</a>
         <nav>
+            <a class="logo" href="index.html">Snappy Savings</a>
             <ul class="nav_links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Calculator</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <a href="{% url 'account_signup' %}"><button class="btn-1 btn-register">Register</button></a>
+            <a href="{% url 'account_login' %}"><button class="btn-1">Login</button></a>
+            <a href="{% url 'account_logout' %}"><button class="btn-1">Logout</button></a>
         </nav>
         <a href="{% url 'register' %}"><button class="btn-1">Register</button></a>
         <a href="{% url 'login' %}"><button class="btn-1">Login</button></a>
         <a href="{% url 'logout' %}"><button class="btn-1">Logout</button></a>
+    </header>
 
-        
-    </header> 
-        
 
 
     {% block content %}
 
     {% endblock %}
 
+
+    <!--footer-->
+    <div class="container-fluid ftr-container mt-2">
+        <footer class="text-center text-dark ">
+            <div>
+                <!--social links-->
+                <section class="social-links text-center pt-5">
+                    <a href="https://www.facebook.com/" class="text-light me-4" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.https://www.linkedin.com/" class="text-light me-4" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="text-light me-4" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="text-light me-4" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </section>
+
+                <hr class="my-4 text-light">
+
+                <section class="mt-5">
+                    <div class="row d-flex justify-content-center text-light">
+                        <div class="col-8">
+                            <p class="disclaimer">DISCLAIMER: This project was created for a hackathon project not
+                                commercial pursposes</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--copyright-->
+            <div class="copyright-box text-light">
+                <p class="copyright">&copy; 2023 Snappy Savings </p>
+            </div>
+        </footer>
+    </div>
+
     {% if messages %}
-        <div class="message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/cards/card_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/cards/card_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/cards/card_success.html' %}
-                    {% else %}
-                        {% include 'includes/cards/card_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/cards/card_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/cards/card_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/cards/card_success.html' %}
+        {% else %}
+        {% include 'includes/cards/card_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
     {% endif %}
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
