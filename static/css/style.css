@@ -7,15 +7,23 @@
     padding: 0;
 }
 
-.background-image {
+body {
+    background-image: url('https://imgur.com/UJjzQF3.png');
+    height: fit-content;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .background-image {
     width: 100%;
     max-height:max-content;
     position: absolute;
     object-fit: contain;
     overflow: hidden;
-    /* animation: falling 38s linear infinite; */
+    animation: falling 38s linear infinite;
     z-index: -2;
-}
+} */
 
 /* @keyframes falling {
     0% {
@@ -440,12 +448,21 @@ hr {
     text-align: center;
 }
 
+.close-btn {
+    float: right;
+    margin: -40px -40px 0 0;
+}
 
 .card-body .d-flex p, .card-body .toast-body p {
+    display: block;
     padding: 10%
 }
 
-.signup, .login{
+.card-body .d-flex .message-p, .card-body .toast-body .message-p {
+    padding: 3% 5%;
+}
+
+.signup, .login, .password_reset{
     border: 4px solid #20B2AA;
     border-radius: 10px;
     padding: 3% 3% 1% 10%;
@@ -458,7 +475,12 @@ hr {
     margin-bottom: 172px;
 }
 
-.signup button, .login button {
+.password_reset {
+    margin-top: 100px;
+    margin-bottom: 169.5px;
+}
+
+.signup button, .login button, .password_reset input[type=submit] {
     width: 130px;
     height: 40px;
     background-color: green;
@@ -467,6 +489,11 @@ hr {
     border-radius: 10px;
     margin-top: 30px;
     margin-left: 20%;
+}
+
+.password_reset input[type=submit] {
+    width: 150px;
+    padding: 1%;
 }
 
 .login button {

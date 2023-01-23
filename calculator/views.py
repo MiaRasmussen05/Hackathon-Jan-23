@@ -16,17 +16,17 @@ successes = [
 ]
 
 warnings = [
-    'Brain oh brain where art thou brain. Did you really think you could afford that?',
-    'Oh that sounds cool, but of wait what is that... You are broke think again. Or try and think at all next time.',
-    'Did your broke ass actullay think you could afford that. You make me laugh.',
+    'Brain oh brain where art thou brain? Did you really think you could afford that?',
+    'Oh that sounds cool, but oh wait what is that... You are broke think again. Or try and think at all next time.',
+    'Did your broke ass actually think you could afford that? You make me laugh.',
     "I don't think I could say this with any more respect, no that is a lie and you are a dumbass."
 ]
 
 errors = [
-    "I can not believe this... Calling you for an idiot would be an insult to all of the stupid people.",
-    "Try and put on your glass and actully read you pay check.",
-    "Do you want me to dum this down for you? If you don't get your act together you are sleeping on the streets in a week.",
-    "You must be the younger sibling, because you clearly got none of the brain cells."
+    "I can not believe this... Calling you an idiot would be an insult to all of the stupid people.",
+    "Try and put on your glass and actually read your paycheck.",
+    "Do you want me to dumb this down for you? If you don't get your act together you are sleeping on the streets in a week.",
+    "You must be the younger sibling because you clearly got none of the brain cells."
 ]
 
 

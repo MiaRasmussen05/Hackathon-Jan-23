@@ -1,10 +1,12 @@
 <div class="card-wrapper container-fluid">
-    <div class="card border border-danger rounded-sm border-5">
+    <div class="card border border-danger rounded-sm border-5 btn-close card-dismissable">
         <div class="card-body">
             <div class="d-flex">
                 <div class="toast-body container-fluid">
-                    <p class="bg-danger container-fluid">You are going into debt as we speak...</p>
-                    {{ message }}
+                    <p class="bg-danger container-fluid">You are going into debt as we speak...
+                        <button type="button" class="btn-close btn-close-black close-btn" data-bs-dismiss="card" aria-label="Close"></button>
+                    </p>
+                    <p class="message-p">{{ message }}</p>
                 </div>
             </div>
         </div>
