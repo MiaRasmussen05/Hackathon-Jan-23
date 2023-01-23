@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 profile-info section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="https://imgur.com/QLegeDh.png" alt="">
+                    </div>
+                </div>
+                <div class="profile-menu">
+                    <div class="profile-menu-btn">
+                        <button class="col-4 profile-btn btn btn-success btn-lg">Profile</button>
+                    </div>
+                    <div class="profile-menu-btn">
+                        <button class="col-4 profile-btn btn btn-success btn-lg">Edit profile</button>
+                    </div>
+                    <div class="profile-menu-btn">
+                        <button class="col-4 profile-btn btn btn-success btn-lg">Income</button>
+                    </div>
+                    <div class="profile-menu-btn">
+                        <button class="col-4 profile-btn btn btn-success btn-lg">Settings</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="headings uppercase">Profile</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
