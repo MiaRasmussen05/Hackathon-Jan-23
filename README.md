@@ -98,9 +98,8 @@ This palette was created using [Coolors](https://coolors.co/000000-404040-20b2aa
 
 ​
 ### Imagery:
-<< Detail imagery used to compliment your build & theme >>
-​
-<< ensure source attribution is maintained, and that you have used copyright free material >>
+- Most images were sourced from google
+[Google Images](https://images.google.com/)
 ​
 ## Wireframes
 
@@ -292,7 +291,7 @@ In Heroku:
 <details>
 <summary>profile</summary>
 
-![Profile W3C testing screeshot](documentation/validation/thankyou-html.png)
+![Profile W3C testing screeshot]()
 </details>
 
 <br>
@@ -308,9 +307,7 @@ In Heroku:
 </details>
 ​
 ## Credits
-​
-### Code
-<< any and all code that isn't yours...must go here >>
+
 ​
 ### Content
 << any content, such as facts/references/text that isn't yours...must go here >>
