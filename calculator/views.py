@@ -30,10 +30,14 @@ errors = [
 ]
 
 
-
 class LoadHomePage(View):
     def get(self, request):
         return render(request, 'index.html')
+
+
+class LoadLoggedInHomepage(View):
+    def get(self, request):
+        return render(request, 'home.html')
 
 
 def calc(request):
