@@ -1,8 +1,13 @@
 # |Finance App- Snappy Savings
 ​
 ## Team Name: Django Unchained
+
+Snappy Savings is a finance website that tells you if you can afford a specific thing or not. The twist is that it does it in a snappy way! This makes figuring out your finances a bit more fun.
 ​
 [Link to Deployed Project](<<add_deployed_link_to_project_here>>)
+
+<br> 
+
 ​
 ## Contents
 ​
@@ -37,18 +42,18 @@ As a user of the app I want:
 
 End user goal: 
 - Login using a username and password.
-- <!-- Use an API?--> See a display of recent transactions.
+- See a display of recent transactions.
 - Recieve messages from the app when inputting something I can or cannot afford.
 
 End business goal: 
-- Increase app usage. Acceptance criteria: Allow user to create a profile with confirmation of password, allowing a user to login securely. Measurement of success: 
-- Improve customer satisfaction. Acceptance criteria: Allow user to see recent transactions and merchant catagories using an <!-- API?-->. Measurement of success:
+- Increase app usage. Acceptance criteria: Allow user to create a profile with confirmation of password, allowing a user to login securely. 
+- Improve customer satisfaction. Acceptance criteria: Allow user to see recent transactions and merchant catagories. 
 - Make the app fun and increase customer retention. Acceptance criteria: When a user inputs something they can or cannot afford based upon their savings, they will recieve a 
-related message. Measurement of success:
+related message. 
 ​
 ## Technology
 
-- This website has been written using HTML, CSS, JAVASCRIPT, PYTHON, BOOTSTRAP, DJANGO
+- This website has been written using HTML, CSS, JAVASCRIPT, PYTHON, BOOTSTRAP, DJANGO, 
 
 
 ### Frameworks, Libraries and Programs Used
@@ -73,7 +78,6 @@ related message. Measurement of success:
 ​
  We initially thought about what could set our application apart from other finance apps, and we came up with the idea of producing motivational and funny messages based on whether the user can afford a purchase or not. We then discussed which API we would use and how this would allow the user to track spending. We started to concider the layout of the different pages of the application and decided, based upon early wireframes, that we would have a seperate page for returing users to login as well as for new users to create an account. We decided on an initial color scheme and elements of different pages and discussed how we would implement them 
 
-<< consider talking about how you planned as a team here and what tools were implemented >>
 ​
 ### Actual idea & content:
 ​
@@ -98,8 +102,12 @@ This palette was created using [Coolors](https://coolors.co/000000-404040-20b2aa
 
 ​
 ### Imagery:
-- Most images were sourced from google
-[Google Images](https://images.google.com/)
+- Some images were sourced from pexels
+[Pexels](https://pexels.google.com/)
+- Some images were sourced from pixabay
+[Pixabay](https://pixabay.com/vectors/blank-profile-picture-mystery-man-973460/)
+- We used imagur to link images to the html pages
+[Imagur](https://imgur.com/)
 ​
 ## Wireframes
 
@@ -107,9 +115,6 @@ Wireframes were created using [Balsamiq Wireframing Software](https:/balsamiq.co
 
 View wireframes [PDF file here](https://github.com/MiaRasmussen05/Hackathon-Jan-23/blob/main/documentation/snappy-savings.pdf)
 ​
-<< consider adding some notes to detail the planned components or functionality >>
-​
-
 ## Deployment
 
 The site was deployed to Heroku following the instructions below.
@@ -270,50 +275,48 @@ In Heroku:
 ### HTML
  [W3C Markup Validator](https://validator.w3.org/nu/) - validation service used. 
 
-<details>
-<summary>Homepage</summary>
-
-![Homepage W3C testing screeshot]()
-</details>
-
-<details>
-<summary>login</summary>
-
-![Login W3C testing screeshot]()
-</details>
-
-<details>
-<summary>register</summary>
-
-![Register W3C testing screeshot]()
-</details>
-
-<details>
-<summary>profile</summary>
-
-![Profile W3C testing screeshot]()
-</details>
-
 <br>
 
 ### CSS
 
  [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_address)  - validation service used. 
 
- <details>
+<details>
 <summary>Stylesheet</summary>
 
 ![Screenshot of W3C Jigsaw testing for Foodies Corner CSS Stylesheet]()
 </details>
+
+### Lighthouse testing 
+
+<details>
+<summary>Landingpage</summary>
+
+![Homepage W3C testing screeshot](documentation/readme-images/landing-page.png)
+</details>
+
+<details>
+<summary>calculator</summary>
+
+![Login W3C testing screeshot](documentation/readme-images/calculator.png)
+</details>
+
+<details>
+<summary>Profile</summary>
+
+![Register W3C testing screeshot](documentation/readme-images/profile-page.png)
+</details>
+
+<details>
 ​
 ## Credits
 
+- We used some code from [Swipper](https://swiperjs.com/demos#infinite-loop-with-slides-per-group) to create the carousel of the user stories and the creators.
+- We used some code from [11bus11](https://github.com/11bus11/book-store1) to create the backend base as well as the login page.
 ​
-### Content
-<< any content, such as facts/references/text that isn't yours...must go here >>
-​
-### Media
-<< you may have already done this above in the Imagery section, but just in case, please attribute Media acquisition here >>
 ​
 ### Acknowledgements
-<< personal thanks and praise 🙌 >>
+
+- The team members, for working so hard to ensure that the project was at its best.
+- The mentors, for their guidance with the technical issues we had. 
+- Code Institute, for providing a platform where we can learn, build our skills and connect with fellow peers. 
