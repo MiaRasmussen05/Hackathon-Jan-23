@@ -1,10 +1,12 @@
 <div class="card-wrapper container-fluid">
-    <div class="card border border-info rounded-sm border-5">
+    <div class="card border border-info rounded-sm border-5 card-dismissable">
         <div class="card-body">
             <div class="d-flex">
                 <div class="toast-body container-fluid">
-                    <p class="bg-info container-fluid">Form not valid...</p>
-                    {{ message }}
+                    <p class="bg-info container-fluid">Form not valid...
+                        <button type="button" class="btn-close btn-close-black close-btn" data-bs-dismiss="card" aria-label="Close"></button>
+                    </p>
+                    <p class="message-p">{{ message }}</p>
                 </div>
               <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
