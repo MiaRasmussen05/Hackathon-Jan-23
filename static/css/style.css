@@ -15,29 +15,11 @@ body {
     background-size: cover;
 }
 
-/* .background-image {
-    width: 100%;
-    max-height:max-content;
-    position: absolute;
-    object-fit: contain;
-    overflow: hidden;
-    animation: falling 38s linear infinite;
-    z-index: -2;
-} */
-
-/* @keyframes falling {
-    0% {
-        transform: translate(0);
-      }
-      100% {
-        transform: translateY(2840px);
-      }
-  } */
-
 /* Navbar */
 
 nav {
     width: 100%;
+    height: 100px;
     background-color: #20B2AA;
     padding-bottom: 8px;
     z-index: 2;
@@ -129,9 +111,17 @@ li, a, button {
     font-size: 20px;
 }
 
-/* main {
-    position: relative;
-} */
+.profile-link img {
+    width: 80px;
+    margin-top: -40px;
+    margin-left: 1000px;
+}
+
+.dropdown-menu {
+    margin-left: 960px;
+}
+
+/* Landing Page */
 
 .start-section {
     height: 88vh;
@@ -166,7 +156,7 @@ li, a, button {
     margin-left: 33%;
 }
 
-/* descripttion sections styles */
+/* Descripttion sections styles */
 
 .descriptions {
     background-color: rgba(32, 178, 170, 0.7);
@@ -249,7 +239,7 @@ li, a, button {
     display: block;
 }
 
-/* end description section */
+/* End description section */
 
 .comment-section {
     width: 100%;
@@ -281,8 +271,6 @@ li, a, button {
 .comment-image {
     width: 120px;
     height: 120px;
-    /* border: 2px solid #000; */
-    /* border-radius: 50%; */
 }
 
 .comment-text {
@@ -363,7 +351,9 @@ li, a, button {
 }
 
 .calculator-wrapping form {
-    border: 3px solid #20B2AA;
+    width: 220px;
+    background-color: #20B2AA;
+    border: 3px solid #008B8B;
     border-radius: 10px;
     padding: 6%;
 }
@@ -372,7 +362,7 @@ li, a, button {
     margin-left: 40px;
 }
 
-/* footer styles */
+/* Footer */
 
 .ftr-container {
     background-color: #20B2AA; 
@@ -421,7 +411,7 @@ hr {
 }    
 
 
-/* Calculator messeges */
+/* Calculator Messeges */
 
 .card-wrapper {
     width: 100%;
@@ -468,17 +458,23 @@ hr {
     border-radius: 10px;
     padding: 3% 3% 1% 10%;
     margin: 0 32%;
-    margin-bottom: 114px;
+    margin-bottom: 229px;
 }
 
 .login {
     margin-top: 50px;
-    margin-bottom: 172px;
+    margin-bottom: 281px;
 }
 
 .password_reset {
     margin-top: 100px;
     margin-bottom: 169.5px;
+}
+
+button[type=submit] {
+    width: 130px;
+    border-radius: 10px;
+    background-color: green;
 }
 
 .signup button, .login button, .password_reset input[type=submit] {
@@ -501,8 +497,6 @@ hr {
     margin-left: 10px;
 }
 
-
-
 /* Profile */
 
 .profile-info img {
@@ -512,7 +506,7 @@ hr {
 }
 
 .profile-menu {
-    margin: 10px 0 23px 60px;
+    margin: 10px 0 117px 60px;
 }
 
 .profile-btn {
