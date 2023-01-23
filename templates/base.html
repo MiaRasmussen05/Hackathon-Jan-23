@@ -35,14 +35,14 @@
         <nav>
             <a class="logo" href="/">Snappy Savings</a>
             <ul>
+                <li><a href="{% url 'calc' %}">Calculator</a></li>
+                {% if request.user.is_authenticated %}
+                <li class="profile-link"><a href="{% url 'profile' %}" aria-label="Profile"><img src="https://imgur.com/QLegeDh.png" alt="No image availible"></a></li>
+                <li><a href="{% url 'account_logout' %}"><button class="btn-1">Logout</button></a></li> 
+                {% else %}
                 <li><a href="/">About</a></li>
                 <li><a href="/">Quotes</a></li>
                 <li><a href="/">Creators</a></li>
-                <li><a href="{% url 'calc' %}">Calculator</a></li>
-                {% if request.user.is_authenticated %}
-                <li><a href="{% url 'profile' %}">Profile</a></li>
-                <li><a href="{% url 'account_logout' %}"><button class="btn-1">Logout</button></a></li>
-                {% else %}
                 <li><a href="{% url 'account_signup' %}"><button class="btn-1 btn-register">Register</button></a></li>
                 <li><a href="{% url 'account_login' %}"><button class="btn-1">Login</button></a></li>
                 {% endif %}
