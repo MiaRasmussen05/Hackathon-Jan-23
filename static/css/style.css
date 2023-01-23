@@ -186,19 +186,16 @@ li, a, button {
 }
 
 .info-basic {
-    /* width: 25%; */
     height: 55vh;
     border-radius: 20px;
 } 
 
 .info-two {
-    /* width: 25%; */
     height: 55vh;
     border-radius: 20px;
 }
 
 .info-three {
-    /* width: 25%; */
     height: 55vh;
     border-radius: 20px;
 }
@@ -346,6 +343,11 @@ li, a, button {
     display: inline-block;
     height: 40px; 
     width: 40px; 
+}
+
+.social-links i {
+    font-size: 30px;
+    margin-top: 5px;
 }
 
 .social-links a:hover {
