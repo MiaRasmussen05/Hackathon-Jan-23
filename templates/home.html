@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <section class="container-fluid start-section">
+        <div class="row">
+            <div class="col-6 get-started">
+                <h1><strong>Welcome to Snappy Savings!</strong></h1>
+                <p>
+                    Get the best accountability for your spending. Our job, is to keep you in check as you plan 
+                    for a better future. 
+                </p>
+
+                <br>
+                <br>
+            </div>
+            <div class="col-3 images">
+                <img src="{% static 'images/coin.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+    
+   
+</main>
+{% endblock %}
