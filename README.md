@@ -112,7 +112,157 @@ View wireframes [PDF file here](https://github.com/MiaRasmussen05/Hackathon-Jan-
 ​
 
 ## Deployment
-<< detail deployment methods used here, and any extraneous circumstances to run the project locally >>
+
+The site was deployed to Heroku following the instructions below.
+
+Django Deployment Instructions:
+
+In the Terminal:
+1. Install Django and Gunicorn:
+```pip3 install 'django<4' gunicorn```
+2. Install supporting libraries:
+```pip3 install dj_database_url psycopg2```
+3. Install Cloudinary Libraries:
+```pip3 install dj3-cloudinary-storage```
+4. Create requirements file:
+```pip3 freeze --local > requirements.txt```
+5. Create Project:
+```django-admin startproject PROJECT_NAME .```
+6. Create App:
+```python3 manage.py startapp APP_NAME```
+In settings.py:
+7. Add to installed apps:
+```
+INSTALLED_APPS = [
+…
+'APP_NAME',
+]
+```
+In the Terminal:
+8. Migrate changes:
+```python3 manage.py migrate```
+On ElephantSQL:
+9. Log in to your ElephantSQL account
+10. Click “Create New Instance”
+11. Set up your plan:
+   - Give your plan a Name (this is commonly the name of the project)
+   - Select the Tiny Turtle (Free) plan
+   - You can leave the Tags field blank
+12. Click “Select Region” (Note: If you receive a message saying "Error: No cluster available in your-chosen-data-center yet", choose another region)
+13. Click “Review”, then click “Create instance”
+14. Return to the ElephantSQL dashboard and click on the database instance name for this project
+15. Copy your ElephantSQL database URL using the Copy icon. It will start with postgres://
+In Heroku:
+16. Create new Heroku App:
+```APP_NAME, Location = Europe```
+17. Open the "Settings" tab
+18. Click "Reveal Congig Vars" (Note: The value should be the ElephantSQL database url you copied in the previous step)
+In Gitpod:
+19. Create new env.py file on top level directory
+20. Import os library
+```import os```
+21. Set environment variables:
+```os.environ["DATABASE_URL"] = "Paste in ElephantSQL database URL"```
+22. Add in Secret Key:
+```os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"```
+In Heroku:
+23. Add Secret Key to Config Vars
+```SECRET_KEY, “randomSecretKey”```
+In settings.py:
+24. Reference env.py:
+```
+import os
+import dj_database_url
+
+if os.path.isfile("env.py"):
+   import env
+```
+25. Remove the insecure secret key and replace (links to the SECRET_KEY variable on Heroku)
+```SECRET_KEY = os.environ.get('SECRET_KEY')```
+26. Comment out the old Databases section:
+```
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+```
+27. Add new Databases section (links to the DATATBASE_URL variable on Heroku):
+```
+DATABASES = {
+   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+``` 
+In the Terminal:
+28. 
+```python3 manage.py migrate```
+In Cloudinary:
+29. Copy your CLOUDINARY_URL:
+```From Cloudinary Dashboard```
+In env.py:
+30. Add Cloudinary URL:
+```os.environ["CLOUDINARY_URL"] = "cloudinary://************************"```
+In Heroku:
+31. Add Cloudinary URL to Heroku Config Vars:
+```COUDINARY_URL, cloudinary://************************``` 
+32. Add DISABLE_COLLECTSTATIC to Heroku Config Vars (temporary step for the moment, will be removed before deployment)
+```DISABLE_COLLECTSTATIC, 1```
+In settings.py:
+33. Add Cloudinary Libraries to installed apps (Note: order is important):
+```
+INSTALLED_APPS = [
+    …,
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
+    …,
+]
+```
+34. Tell Django to use Cloudinary to store media and static files (place under the Static files note):
+```
+STATIC_URL = '/static/'
+
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+```
+35. Link file to the templates directory in Heroku
+(place under the BASE_DIR line):
+```TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')```
+36. Change the templates directory to TEMPLATES_DIR
+(place within the TEMPLATES array)
+```
+TEMPLATES = [
+    {
+        …,
+        'DIRS': [TEMPLATES_DIR],
+       …,
+            ],
+        },
+    },
+]
+```
+37. Add Heroku Hostname to ALLOWED_HOSTS:
+```ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "localhost"]```
+In Gitpod:
+38. Create static and templates folders on top level directory
+39. Create Procfile on the top level directory
+In Procfile:
+40. Add code:
+```web: gunicorn PROJ_NAME.wsgi```
+In the Terminal:
+41. After saving all files, add, commit and push:
+```git add .```
+```git commit -m “...”```
+```git push```
+In Heroku:
+42. Click on "Deploy" tab, select Github as deployment method, on main branch, and deploy content manually
+
 
 ![Deployed Site]()
 ​
