@@ -30,7 +30,7 @@ def loginPage(request):
 
         if user is not None:
             login(request, user)
-            return redirect('home.html')
+            return redirect('home')
         else:
             messages.info(request, 'Username or password is incorrect')
 
