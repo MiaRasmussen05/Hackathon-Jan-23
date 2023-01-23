@@ -31,7 +31,7 @@ def loginPage(request):
 
         if user is not None:
             login(request, user)
-            return redirect('home')
+            return redirect('index.html')
         else:
             messages.info(request, 'Username or password is incorrect')
 
@@ -41,8 +41,3 @@ def loginPage(request):
 
 def logoutUser(request):
     return redirect('login')
-
-
-class LoadLoggedInHomepage(View):
-    def get(self, request):
-        return render(request, 'home.html')
