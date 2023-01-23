@@ -7,6 +7,25 @@
     padding: 0;
 }
 
+.background-image {
+    width: 100%;
+    max-height:max-content;
+    position: absolute;
+    object-fit: contain;
+    overflow: hidden;
+    /* animation: falling 38s linear infinite; */
+    z-index: -2;
+}
+
+/* @keyframes falling {
+    0% {
+        transform: translate(0);
+      }
+      100% {
+        transform: translateY(2840px);
+      }
+  } */
+
 /* Navbar */
 
 nav {
@@ -331,7 +350,7 @@ li, a, button {
 /* Calculator */
 
 .calculator-wrapping {
-    padding: 90px 0 39px 0;
+    padding: 90px 0 46.6px 0;
     margin: 0 auto;
 }
 
