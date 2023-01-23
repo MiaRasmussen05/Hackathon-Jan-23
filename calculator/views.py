@@ -35,11 +35,6 @@ class LoadHomePage(View):
         return render(request, 'index.html')
 
 
-class LoadLoggedInHomepage(View):
-    def get(self, request):
-        return render(request, 'home.html')
-
-
 def calc(request):
     if request.user.is_authenticated:
         try:
