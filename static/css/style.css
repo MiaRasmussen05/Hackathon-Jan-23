@@ -15,15 +15,7 @@ body {
     background-size: cover;
 }
 
-/* Navbar */
-
-nav {
-    width: 100%;
-    height: 100px;
-    background-color: #20B2AA;
-    padding-bottom: 8px;
-    z-index: 2;
-}
+/* Header */
 
 header {
     width: 100%;
@@ -33,6 +25,13 @@ header {
     background-color: #20B2AA;
     border-bottom: 4px solid #404040;
     padding: 0px 2%;
+}
+
+nav {
+    width: 100%;
+    height: 110px;
+    background-color: #20B2AA;
+    z-index: 2;
 }
 
 header a {
@@ -84,16 +83,14 @@ li, a, button {
   box-sizing: border-box;
 }
 .btn-1 {
+    height: 55px;
   -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
   background-color: #20B2AA;
   border-radius: 99rem;
   border-width: 2px;
   color: #fff;
-  cursor: pointer;
-  margin: 0px 10px;
-  margin-top: -13px;
-  padding: 9px 25px;
+  margin-top: -68px;
+  padding: 0 25px;
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   text-transform: uppercase;
 }
@@ -103,22 +100,35 @@ li, a, button {
   color: #000;
 }
 
-.btn-register {
-    margin-left: 480px;
+.btn-logout {
+    background-color: none;
+    border: none;
+    font-size: 15px;
+    margin-top: 12%;
 }
 
 .login-btn-nav {
     font-size: 20px;
 }
 
+.btn-reg {
+    margin-right: 20px;
+}
+
 .profile-link img {
-    width: 80px;
-    margin-top: -40px;
-    margin-left: 1000px;
+    width: 100px;
+    height: 80px;
+    margin-top: -32px;
+}
+
+.dropdown {
+    margin-top: -50px;
 }
 
 .dropdown-menu {
-    margin-left: 960px;
+    width: 50px;
+    background-color: #008B8B;
+    margin: 5px 0 0 -40px;
 }
 
 /* Landing Page */
@@ -346,7 +356,7 @@ li, a, button {
 /* Calculator */
 
 .calculator-wrapping {
-    padding: 90px 0 46.6px 0;
+    padding: 90px 0 45px 0;
     margin: 0 auto;
 }
 
@@ -458,7 +468,7 @@ hr {
     border-radius: 10px;
     padding: 3% 3% 1% 10%;
     margin: 0 32%;
-    margin-bottom: 229px;
+    margin-bottom: 112px;
 }
 
 .login {
